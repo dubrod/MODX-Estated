@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'estated',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '1f294f804fb0ee910c759764fdb961c1',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '0b60fe026fe8f2e54c86db269ff94c72',
+  'native_key' => 'estated.apikey',
+  'object' => '{"key":"estated.apikey","value":"","xtype":"textfield","namespace":"estated","area":"Config","editedon":null}',
+);

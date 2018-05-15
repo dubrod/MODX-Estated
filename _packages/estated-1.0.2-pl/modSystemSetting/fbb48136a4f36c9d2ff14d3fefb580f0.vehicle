@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'estated',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8fd35f5df0477dd63672d233b4bfdd5a',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'fbb48136a4f36c9d2ff14d3fefb580f0',
+  'native_key' => 'estated.template',
+  'object' => '{"key":"estated.template","value":"","xtype":"textfield","namespace":"estated","area":"Config","editedon":null}',
+);
