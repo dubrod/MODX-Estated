@@ -1,0 +1,410 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '2a9808759edc636ffa18119bde11c077' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"estated-data-table","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"row\\">\\n  <div class=\\"col-lg-6\\">\\n    <p>\\n      <h4>General Info:<\\/h4>\\n    <\\/p>\\n    <ul>\\n      [[*estated_price:notempty=`<li>\\n        <strong>List Price:<\\/strong> [[*estated_price]]\\n      <\\/li>`]]\\n      [[*estated_status:notempty=`<li>\\n        <strong>Listing Status:<\\/strong> [[*estated_status]]\\n      <\\/li>`]]\\n      [[*estated_acres:notempty=`<li>\\n        <strong>Acres:<\\/strong> [[*estated_acres]]\\n      <\\/li>`]]\\n      [[*estated_total_size:notempty=`<li>\\n        <strong>Square Footage:<\\/strong> [[*estated_total_size]]\\n      <\\/li>`]]\\n      [[*estated_garage_size:notempty=`<li>\\n        <strong>Garage Size:<\\/strong> [[*estated_garage_size]]\\n      <\\/li>`]]\\n      [[*estated_year:notempty=`<li>\\n        <strong>Year Built:<\\/strong> [[*estated_year]]\\n      <\\/li>`]]\\n      [[*estated_beds:notempty=`<li>\\n        <strong>Beds:<\\/strong> [[*estated_beds]]\\n      <\\/li>`]]\\n      [[*estated_baths:notempty=`<li>\\n        <strong>Baths:<\\/strong> [[*estated_baths]]\\n      <\\/li>`]]\\n    <\\/ul>\\n\\n    <p>\\n      <h4>Zoning Info:<\\/h4>\\n    <\\/p>\\n    <ul>\\n      [[*estated_zoning_category:notempty=`<li>\\n        <strong>Zoning Category:<\\/strong> [[*estated_zoning_category]]\\n      <\\/li>`]]\\n      [[*estated_zoning_description:notempty=`<li>\\n        <strong>Zoning Description:<\\/strong> [[*estated_zoning_description]]\\n      <\\/li>`]]\\n      [[*estated_value:notempty=`<li>\\n        <strong>Market Value:<\\/strong> $[[*estated_value]]\\n      <\\/li>`]]\\n    <\\/ul>\\n  <\\/div>\\n  <div class=\\"col-lg-6\\">\\n    <p>\\n      <h4>Structural Info:<\\/h4>\\n    <\\/p>\\n    <ul>\\n      [[*estated_arch_type:notempty=`<li>\\n        <strong>Architecture Type:<\\/strong> [[*estated_arch_type]]\\n      <\\/li>`]]\\n      [[*estated_ext_type:notempty=`<li>\\n        <strong>Exterior Wall Type:<\\/strong> [[*estated_ext_type]]\\n      <\\/li>`]]\\n      [[*estated_ac_type:notempty=`<li>\\n        <strong>AC Type:<\\/strong> [[*estated_ac_type]]\\n      <\\/li>`]]\\n      [[*estated_structures_category:notempty=`<li>\\n        <strong>Category:<\\/strong> [[*estated_structures_category]]\\n      <\\/li>`]]\\n      [[*estated_condition:notempty=`<li>\\n        <strong>Condition:<\\/strong> [[*estated_condition]]\\n      <\\/li>`]]\\n      <li>\\n        <strong>Pool:<\\/strong> [[*estated_pool_type:default=`No Pool`]]\\n      <\\/li>\\n      [[*estated_quality:notempty=`<li>\\n        <strong>Quality:<\\/strong> [[*estated_quality]]\\n      <\\/li>`]]\\n      [[*estated_roof_type:notempty=`<li>\\n        <strong>Roof Type:<\\/strong> [[*estated_roof_type]]\\n      <\\/li>`]]\\n    <\\/ul>\\n  <\\/div>\\n<\\/div>\\n","locked":0,"properties":"a:0:{}","static":0,"static_file":"","content":"<div class=\\"row\\">\\n  <div class=\\"col-lg-6\\">\\n    <p>\\n      <h4>General Info:<\\/h4>\\n    <\\/p>\\n    <ul>\\n      [[*estated_price:notempty=`<li>\\n        <strong>List Price:<\\/strong> [[*estated_price]]\\n      <\\/li>`]]\\n      [[*estated_status:notempty=`<li>\\n        <strong>Listing Status:<\\/strong> [[*estated_status]]\\n      <\\/li>`]]\\n      [[*estated_acres:notempty=`<li>\\n        <strong>Acres:<\\/strong> [[*estated_acres]]\\n      <\\/li>`]]\\n      [[*estated_total_size:notempty=`<li>\\n        <strong>Square Footage:<\\/strong> [[*estated_total_size]]\\n      <\\/li>`]]\\n      [[*estated_garage_size:notempty=`<li>\\n        <strong>Garage Size:<\\/strong> [[*estated_garage_size]]\\n      <\\/li>`]]\\n      [[*estated_year:notempty=`<li>\\n        <strong>Year Built:<\\/strong> [[*estated_year]]\\n      <\\/li>`]]\\n      [[*estated_beds:notempty=`<li>\\n        <strong>Beds:<\\/strong> [[*estated_beds]]\\n      <\\/li>`]]\\n      [[*estated_baths:notempty=`<li>\\n        <strong>Baths:<\\/strong> [[*estated_baths]]\\n      <\\/li>`]]\\n    <\\/ul>\\n\\n    <p>\\n      <h4>Zoning Info:<\\/h4>\\n    <\\/p>\\n    <ul>\\n      [[*estated_zoning_category:notempty=`<li>\\n        <strong>Zoning Category:<\\/strong> [[*estated_zoning_category]]\\n      <\\/li>`]]\\n      [[*estated_zoning_description:notempty=`<li>\\n        <strong>Zoning Description:<\\/strong> [[*estated_zoning_description]]\\n      <\\/li>`]]\\n      [[*estated_value:notempty=`<li>\\n        <strong>Market Value:<\\/strong> $[[*estated_value]]\\n      <\\/li>`]]\\n    <\\/ul>\\n  <\\/div>\\n  <div class=\\"col-lg-6\\">\\n    <p>\\n      <h4>Structural Info:<\\/h4>\\n    <\\/p>\\n    <ul>\\n      [[*estated_arch_type:notempty=`<li>\\n        <strong>Architecture Type:<\\/strong> [[*estated_arch_type]]\\n      <\\/li>`]]\\n      [[*estated_ext_type:notempty=`<li>\\n        <strong>Exterior Wall Type:<\\/strong> [[*estated_ext_type]]\\n      <\\/li>`]]\\n      [[*estated_ac_type:notempty=`<li>\\n        <strong>AC Type:<\\/strong> [[*estated_ac_type]]\\n      <\\/li>`]]\\n      [[*estated_structures_category:notempty=`<li>\\n        <strong>Category:<\\/strong> [[*estated_structures_category]]\\n      <\\/li>`]]\\n      [[*estated_condition:notempty=`<li>\\n        <strong>Condition:<\\/strong> [[*estated_condition]]\\n      <\\/li>`]]\\n      <li>\\n        <strong>Pool:<\\/strong> [[*estated_pool_type:default=`No Pool`]]\\n      <\\/li>\\n      [[*estated_quality:notempty=`<li>\\n        <strong>Quality:<\\/strong> [[*estated_quality]]\\n      <\\/li>`]]\\n      [[*estated_roof_type:notempty=`<li>\\n        <strong>Roof Type:<\\/strong> [[*estated_roof_type]]\\n      <\\/li>`]]\\n    <\\/ul>\\n  <\\/div>\\n<\\/div>\\n"}',
+        'guid' => '0c7585dd2a662c01a2c3e3883cc2ac7e',
+        'native_key' => NULL,
+        'signature' => '686c12eda52b7745dd06ea0bdfaaec60',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      '606f77fc2630f0a1fe581319c66b44b7' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"Estated","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/*\\n* Created by Wayne Roddy (wayne@modx.com) May 2018\\n* Look up and return result from https:\\/\\/estated.com\\/api\\/\\n* Usage: [[!Estated]]\\n* Requirements: API Key in Parameters\\n*\\/\\n\\n$key = $modx->getOption(\'estated.apikey\');\\n$tpl = $modx->getOption(\'estated.template\');\\necho \\"Estated Resource Updates:<br>\\";\\n\\nif(empty($key) || empty($tpl)){\\n  return false;\\n}\\n\\n$resources = $modx->getCollection(\'modResource\', array(\'published\'=>\'1\',\'template\'=>$tpl));\\n\\nforeach($resources as $resource) {\\n    $id = $resource->get(\'id\');\\n    $title = $resource->get(\'pagetitle\');\\n    $estated_skip = $resource->getTVValue(\'estated_skip\');\\n\\n    if($estated_skip==\\"True\\"){\\n      continue;\\n    }\\n\\n    \\/\\/Required Fields\\n    $address = $resource->getTVValue(\'estated_street\');\\n    $address = str_replace(\\" \\",\\"+\\",$address);\\n    $city = $resource->getTVValue(\'estated_city\');\\n    $state = $resource->getTVValue(\'estated_state\');\\n    $zip = $resource->getTVValue(\'estated_zip\');\\n\\n    if(empty($address) || empty($city) || empty($state) || empty($zip)){\\n      continue;\\n    }\\n\\n    \\/\\/Address Lookup\\n    $url = \'https:\\/\\/estated.com\\/api\\/property?token=\'.$key.\'&address=\'.$address.\'&city=\'.$address.\'&state=\'.$state.\'&zip=\'.$zip.\'\';\\n\\n    $ch = curl_init();\\n    curl_setopt($ch, CURLOPT_URL, $url);\\n    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);\\n    $estated_output = curl_exec($ch);\\n    curl_close($ch);\\n\\n    $data = json_decode($estated_output);\\n\\n    if($data->status == \\"success\\"){\\n        $resource->setTVValue(\'estated_lat\', $data->data->property->address->latitude);\\n        $resource->setTVValue(\'estated_long\', $data->data->property->address->longitude);\\n        $resource->setTVValue(\'estated_zoning_category\', $data->data->property->site->zoning_category);\\n        $resource->setTVValue(\'estated_zoning_description\', $data->data->property->site->zoning_description);\\n        $resource->setTVValue(\'estated_acres\', $data->data->property->site->acres);\\n        $resource->setTVValue(\'estated_year\', $data->data->property->structures[0]->year_built);\\n        $resource->setTVValue(\'estated_beds\', $data->data->property->structures[0]->beds_count);\\n        $resource->setTVValue(\'estated_baths\', $data->data->property->structures[0]->baths_count);\\n        $resource->setTVValue(\'estated_total_size\', $data->data->property->structures[0]->total_size);\\n        $resource->setTVValue(\'estated_garage_size\', $data->data->property->structures[0]->garage_size);\\n        $resource->setTVValue(\'estated_arch_type\', $data->data->property->structures[0]->architecture_type);\\n        $resource->setTVValue(\'estated_ext_type\', $data->data->property->structures[0]->exterior_wall_type);\\n        $resource->setTVValue(\'estated_ac_type\', $data->data->property->structures[0]->air_conditioning_type);\\n        $resource->setTVValue(\'estated_structures_category\', $data->data->property->structures[0]->category);\\n        $resource->setTVValue(\'estated_condition\', $data->data->property->structures[0]->condition);\\n        $resource->setTVValue(\'estated_pool_type\', $data->data->property->structures[0]->pool_type);\\n        $resource->setTVValue(\'estated_quality\', $data->data->property->structures[0]->quality);\\n        $resource->setTVValue(\'estated_roof_type\', $data->data->property->structures[0]->roof_type);\\n        $resource->setTVValue(\'estated_value\', $data->data->property->valuation->value);\\n    }\\n\\n    echo \\"- Updated \\".$title.\\"(\\".$id.\\")<br>\\";\\n\\n}","locked":0,"properties":"a:0:{}","moduleguid":"","static":0,"static_file":"","content":"\\/*\\n* Created by Wayne Roddy (wayne@modx.com) May 2018\\n* Look up and return result from https:\\/\\/estated.com\\/api\\/\\n* Usage: [[!Estated]]\\n* Requirements: API Key in Parameters\\n*\\/\\n\\n$key = $modx->getOption(\'estated.apikey\');\\n$tpl = $modx->getOption(\'estated.template\');\\necho \\"Estated Resource Updates:<br>\\";\\n\\nif(empty($key) || empty($tpl)){\\n  return false;\\n}\\n\\n$resources = $modx->getCollection(\'modResource\', array(\'published\'=>\'1\',\'template\'=>$tpl));\\n\\nforeach($resources as $resource) {\\n    $id = $resource->get(\'id\');\\n    $title = $resource->get(\'pagetitle\');\\n    $estated_skip = $resource->getTVValue(\'estated_skip\');\\n\\n    if($estated_skip==\\"True\\"){\\n      continue;\\n    }\\n\\n    \\/\\/Required Fields\\n    $address = $resource->getTVValue(\'estated_street\');\\n    $address = str_replace(\\" \\",\\"+\\",$address);\\n    $city = $resource->getTVValue(\'estated_city\');\\n    $state = $resource->getTVValue(\'estated_state\');\\n    $zip = $resource->getTVValue(\'estated_zip\');\\n\\n    if(empty($address) || empty($city) || empty($state) || empty($zip)){\\n      continue;\\n    }\\n\\n    \\/\\/Address Lookup\\n    $url = \'https:\\/\\/estated.com\\/api\\/property?token=\'.$key.\'&address=\'.$address.\'&city=\'.$address.\'&state=\'.$state.\'&zip=\'.$zip.\'\';\\n\\n    $ch = curl_init();\\n    curl_setopt($ch, CURLOPT_URL, $url);\\n    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);\\n    $estated_output = curl_exec($ch);\\n    curl_close($ch);\\n\\n    $data = json_decode($estated_output);\\n\\n    if($data->status == \\"success\\"){\\n        $resource->setTVValue(\'estated_lat\', $data->data->property->address->latitude);\\n        $resource->setTVValue(\'estated_long\', $data->data->property->address->longitude);\\n        $resource->setTVValue(\'estated_zoning_category\', $data->data->property->site->zoning_category);\\n        $resource->setTVValue(\'estated_zoning_description\', $data->data->property->site->zoning_description);\\n        $resource->setTVValue(\'estated_acres\', $data->data->property->site->acres);\\n        $resource->setTVValue(\'estated_year\', $data->data->property->structures[0]->year_built);\\n        $resource->setTVValue(\'estated_beds\', $data->data->property->structures[0]->beds_count);\\n        $resource->setTVValue(\'estated_baths\', $data->data->property->structures[0]->baths_count);\\n        $resource->setTVValue(\'estated_total_size\', $data->data->property->structures[0]->total_size);\\n        $resource->setTVValue(\'estated_garage_size\', $data->data->property->structures[0]->garage_size);\\n        $resource->setTVValue(\'estated_arch_type\', $data->data->property->structures[0]->architecture_type);\\n        $resource->setTVValue(\'estated_ext_type\', $data->data->property->structures[0]->exterior_wall_type);\\n        $resource->setTVValue(\'estated_ac_type\', $data->data->property->structures[0]->air_conditioning_type);\\n        $resource->setTVValue(\'estated_structures_category\', $data->data->property->structures[0]->category);\\n        $resource->setTVValue(\'estated_condition\', $data->data->property->structures[0]->condition);\\n        $resource->setTVValue(\'estated_pool_type\', $data->data->property->structures[0]->pool_type);\\n        $resource->setTVValue(\'estated_quality\', $data->data->property->structures[0]->quality);\\n        $resource->setTVValue(\'estated_roof_type\', $data->data->property->structures[0]->roof_type);\\n        $resource->setTVValue(\'estated_value\', $data->data->property->valuation->value);\\n    }\\n\\n    echo \\"- Updated \\".$title.\\"(\\".$id.\\")<br>\\";\\n\\n}"}',
+        'guid' => '8bcb36dd9335dcfa22b9d7f84358ccc5',
+        'native_key' => NULL,
+        'signature' => '38812044152dcf85309b298907a4948c',
+      ),
+    ),
+    'TemplateVars' => 
+    array (
+      'bc849f62fa7e328482b88bac38850a64' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_street","caption":"Street Address","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":0,"display":"","default_text":"","properties":"a:0:{}","input_properties":"a:1:{s:10:\\"allowBlank\\";i:0;}","output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '7c5a135d1bcdd1474dc1cae0a6c7919a',
+        'native_key' => NULL,
+        'signature' => '97abae8ab1e3bbb3d3d7891a0052d4dc',
+      ),
+      '51c9b62cc275314fbeaa86b12cfa4232' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_city","caption":"City","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":1,"display":"","default_text":"","properties":"a:0:{}","input_properties":"a:1:{s:10:\\"allowBlank\\";i:0;}","output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => 'fe9e067fc7627e7d4d2afb3a3c80ace0',
+        'native_key' => NULL,
+        'signature' => 'ad1c28d61223ef844c066aa2b70e1f8f',
+      ),
+      '8ab6b5aed2b010ea5ebba093ef9876e5' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_state","caption":"State","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":2,"display":"","default_text":"","properties":"a:0:{}","input_properties":"a:1:{s:10:\\"allowBlank\\";i:0;}","output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '1cd239611d9be4e1cbc197e68667b68c',
+        'native_key' => NULL,
+        'signature' => 'b1759c269daaae600b783ce20255ea0c',
+      ),
+      '60d632bfe8859d26f3421f84e778dc8b' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_zip","caption":"Zipcode","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":3,"display":"","default_text":"","properties":"a:0:{}","input_properties":"a:1:{s:10:\\"allowBlank\\";i:0;}","output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '004832bb093fc57a3d9db013838b1e29',
+        'native_key' => NULL,
+        'signature' => '13e64ffbace29c529ca4b486c1648691',
+      ),
+      'c36036e7e223e56acb6f00c47a244490' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_lat","caption":"Latitude","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":4,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => 'ac3820c256dc5ad1873b602d93933d75',
+        'native_key' => NULL,
+        'signature' => '4ad5a5dc798ead314d1b66a45eb4699b',
+      ),
+      'dcd2bc86e53fafa80572c3a0e5be5fa8' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_long","caption":"Longitude","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":5,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => 'f2f84b1f8692b8d6707e0d2f6fe5811b',
+        'native_key' => NULL,
+        'signature' => '5af33e75c1df262e24087f021182c7ce',
+      ),
+      '5b8b155c49a085e9030e7645a5acddb0' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_zoning_category","caption":"Zoning Category","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":6,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => 'd86e94d1013b8c9edbf38f37e2019963',
+        'native_key' => NULL,
+        'signature' => 'fd0fcbea63486fc8bfbd930f3c5453e9',
+      ),
+      'fe27c131403b9c4a8ecf34d740886880' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_zoning_description","caption":"Zoning Description","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":7,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '85483acc022594863bed4048dc1201d3',
+        'native_key' => NULL,
+        'signature' => 'b238e09004b935be50117ab5c3a2ea6b',
+      ),
+      'bd9a15f1549738c64eaa709fe8c2fd4a' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_acres","caption":"Acres","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":8,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '233b3ba567288b381978f7eb44de1228',
+        'native_key' => NULL,
+        'signature' => '5bc17f6e1f5aab15dc35c840de752ae7',
+      ),
+      'd28f097f70d0509273344b748429d54d' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_year","caption":"Year Built","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":9,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '314d5a5e670b2c64b7717e349ecc7c54',
+        'native_key' => NULL,
+        'signature' => '2a368196b788695c07fafedc1e17ad9d',
+      ),
+      '285836925cc61f6acaf1fa45d0ba3c42' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_beds","caption":"Beds","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":10,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '1791b3f0bb8b114b1ea5c79a369668bb',
+        'native_key' => NULL,
+        'signature' => '70371417b8f420c6dc4384c3543ff9d6',
+      ),
+      '4224d05818660e4a83b419d09b85feab' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_baths","caption":"Baths","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":11,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => 'ca6471bbd218ca09e9c7bcf144a223fb',
+        'native_key' => NULL,
+        'signature' => 'db0550fef9a02d9f7409113a359bc937',
+      ),
+      '326a4158aded04b3018a31e58ffc1f58' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_total_size","caption":"Total Size","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":12,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '3d7305938721c1022bdae63ddd9f7cff',
+        'native_key' => NULL,
+        'signature' => 'f51c88daad5c52c49dee4526b5ba5f6d',
+      ),
+      '6c1ec1e6f3025ad295808895e69f07e7' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_garage_size","caption":"Garage Size","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":12,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '600dbcd044ea232fba9227a3ac83a58b',
+        'native_key' => NULL,
+        'signature' => '56237b40d724b5c94a3f4b10a2f5ab09',
+      ),
+      'afb0b7d6cab4ee8b09f79903319fe361' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_arch_type","caption":"Architecture Type","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":13,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '0a2779ef935180fe4075ae80dd96818f',
+        'native_key' => NULL,
+        'signature' => '90c37c51a2b2f3991bf4034e884f637d',
+      ),
+      '4bb3baee246bd34c8c8352e91d3d0b2c' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_ext_type","caption":"Exterior Wall Type","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":14,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '4c1a7705871c51ea1c358e5d148143ef',
+        'native_key' => NULL,
+        'signature' => '832ffc94a609742d68dd2cef85d34d27',
+      ),
+      '24ce1f846cd4d4bf736e7c2bbedd5837' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_ac_type","caption":"Air Conditioning Type","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":15,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '5f6a703ed251d97776f317db2e69f91c',
+        'native_key' => NULL,
+        'signature' => '816accb41dd0361a6cc7d553ee4d19bb',
+      ),
+      'bbda8d3818b8ede987fe486723648add' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_structures_category","caption":"Category","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":16,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '03bfe2caf2f113f909348ae64807ad81',
+        'native_key' => NULL,
+        'signature' => 'cc5b6910fc2ebab5fbcb050a8cf5072c',
+      ),
+      'c1800b1c3dd8b3030b05e21686bc2a9e' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_condition","caption":"Condition","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":17,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => 'bd5438e939d9161d43d8aa861bea45c7',
+        'native_key' => NULL,
+        'signature' => '4f79823054807667af5b74f8f1123698',
+      ),
+      '6f3026e509deb6415e0a1d2791ebb561' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_pool_type","caption":"Pool","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":18,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '6ca3066a554fd52a491a8ea12d42678f',
+        'native_key' => NULL,
+        'signature' => '9659cf030d5388b7275f77796c71aede',
+      ),
+      'f011ffffdd44de043fc6093c7ab8f12f' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_quality","caption":"Quality","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":19,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '5a050e6bdc0142561731f5d07f85a528',
+        'native_key' => NULL,
+        'signature' => '10155d32a3bf91d7a90cfe1e74fba9bc',
+      ),
+      '11239adf52cd3015840314e3aecf2185' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_roof_type","caption":"Roof Type","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":20,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '7fe8d2061c9a2903c61ec290d68f93b9',
+        'native_key' => NULL,
+        'signature' => '632ed6e617089134ac2ab01ec0be5cbb',
+      ),
+      '2bde3eb5f99c1c0e7658245c9594c685' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_value","caption":"Market Value","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":21,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => 'c9386ba35907927fd0a13e44f943c139',
+        'native_key' => NULL,
+        'signature' => '7f3ab338401d8221ccda3acd9a1b1bc0',
+      ),
+      'db17b12bb459c1b706583709a0e49bea' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_price","caption":"List Price","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":22,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '9144a86abcdb02803d795d23496d6b43',
+        'native_key' => NULL,
+        'signature' => 'af1a1efd6f398ad33e6679e94cb11bda',
+      ),
+      '6256bea5383dde3b4d291c5b1b2af8e8' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"listbox","name":"estated_status","caption":"Listing Status","description":"","editor_type":0,"category":0,"locked":0,"elements":"For Sale||Pending||Sold","rank":98,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '2c17fb9a52f66b74b1a8809707c9261d',
+        'native_key' => NULL,
+        'signature' => 'b69d95078fd9314720c178c5b9a032f2',
+      ),
+      'fbe77b8aae3b263490c399e71d81eac6' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"listbox","name":"estated_skip","caption":"Skip during API Lookup","description":"","editor_type":0,"category":0,"locked":0,"elements":"False||True","rank":99,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => 'c6b6517be29f928b1e46bdb036b2cb91',
+        'native_key' => NULL,
+        'signature' => 'fc3fae5078e5a9004014111e31921691',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'parent',
+        1 => 'category',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'unique_key' => 'name',
+      'preserve_keys' => false,
+      'update_object' => true,
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => false,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'namespace' => 'estated',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"estated-1.0.2-pl\\/modCategory\\/1c81d0c8dd56edeb17d0b4cd8f044305\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"estated"}',
+    ),
+    1 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"estated-1.0.2-pl\\/modCategory\\/1c81d0c8dd56edeb17d0b4cd8f044305.gpm.resolve.tv_templates.resolver","type":"php","name":"gpm.resolve.tv_templates"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"estated-1.0.2-pl\\/modCategory\\/1c81d0c8dd56edeb17d0b4cd8f044305.gpm.resolve.resources.resolver","type":"php","name":"gpm.resolve.resources"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '4cbc054a25efbf0f5fb71ea94e93fffe',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '1c81d0c8dd56edeb17d0b4cd8f044305',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"Estated","rank":0}',
+);

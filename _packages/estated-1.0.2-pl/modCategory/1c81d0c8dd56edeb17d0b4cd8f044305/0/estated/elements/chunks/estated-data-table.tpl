@@ -7,6 +7,9 @@
       [[*estated_price:notempty=`<li>
         <strong>List Price:</strong> [[*estated_price]]
       </li>`]]
+      [[*estated_status:notempty=`<li>
+        <strong>Listing Status:</strong> [[*estated_status]]
+      </li>`]]
       [[*estated_acres:notempty=`<li>
         <strong>Acres:</strong> [[*estated_acres]]
       </li>`]]
@@ -38,7 +41,7 @@
         <strong>Zoning Description:</strong> [[*estated_zoning_description]]
       </li>`]]
       [[*estated_value:notempty=`<li>
-        <strong>Market Value:</strong> [[*estated_value]]
+        <strong>Market Value:</strong> $[[*estated_value]]
       </li>`]]
     </ul>
   </div>

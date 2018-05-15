@@ -53,19 +53,19 @@ foreach($resources as $resource) {
         $resource->setTVValue('estated_zoning_category', $data->data->property->site->zoning_category);
         $resource->setTVValue('estated_zoning_description', $data->data->property->site->zoning_description);
         $resource->setTVValue('estated_acres', $data->data->property->site->acres);
-        $resource->setTVValue('estated_year', $data->data->property->structures->year_built);
-        $resource->setTVValue('estated_beds', $data->data->property->structures->beds_count);
-        $resource->setTVValue('estated_baths', $data->data->property->structures->baths_count);
-        $resource->setTVValue('estated_total_size', $data->data->property->structures->total_size);
-        $resource->setTVValue('estated_garage_size', $data->data->property->structures->garage_size);
-        $resource->setTVValue('estated_arch_type', $data->data->property->structures->architecture_type);
-        $resource->setTVValue('estated_ext_type', $data->data->property->structures->exterior_wall_type);
-        $resource->setTVValue('estated_ac_type', $data->data->property->structures->air_conditioning_type);
-        $resource->setTVValue('estated_structures_category', $data->data->property->structures->category);
-        $resource->setTVValue('estated_condition', $data->data->property->structures->condition);
-        $resource->setTVValue('estated_pool_type', $data->data->property->structures->pool_type);
-        $resource->setTVValue('estated_quality', $data->data->property->structures->quality);
-        $resource->setTVValue('estated_roof_type', $data->data->property->structures->roof_type);
+        $resource->setTVValue('estated_year', $data->data->property->structures[0]->year_built);
+        $resource->setTVValue('estated_beds', $data->data->property->structures[0]->beds_count);
+        $resource->setTVValue('estated_baths', $data->data->property->structures[0]->baths_count);
+        $resource->setTVValue('estated_total_size', $data->data->property->structures[0]->total_size);
+        $resource->setTVValue('estated_garage_size', $data->data->property->structures[0]->garage_size);
+        $resource->setTVValue('estated_arch_type', $data->data->property->structures[0]->architecture_type);
+        $resource->setTVValue('estated_ext_type', $data->data->property->structures[0]->exterior_wall_type);
+        $resource->setTVValue('estated_ac_type', $data->data->property->structures[0]->air_conditioning_type);
+        $resource->setTVValue('estated_structures_category', $data->data->property->structures[0]->category);
+        $resource->setTVValue('estated_condition', $data->data->property->structures[0]->condition);
+        $resource->setTVValue('estated_pool_type', $data->data->property->structures[0]->pool_type);
+        $resource->setTVValue('estated_quality', $data->data->property->structures[0]->quality);
+        $resource->setTVValue('estated_roof_type', $data->data->property->structures[0]->roof_type);
         $resource->setTVValue('estated_value', $data->data->property->valuation->value);
     }
 

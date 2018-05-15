@@ -24,16 +24,16 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ',
-    'readme' => '# MODX-Estated
+    'readme' => 'MODX-Estated
 
 > A MODX Extra for www.estated.com real estate data service
 
-##Usage:
+Usage:
 1. Install package
 2. Go to System Settings; Update API Key and Templated ID used for Individual Listings
-3. Go to Template used for Individual Listings and assign the `Estated` TVs
+3. Go to Template used for Individual Listings and assign the Estated TVs
 4. Create a resource for your listing. Info Required: Street, City, State, Zip
-5. Go to `/estated-lookup`
+5. Go to `/estated-lookup.html`
 6. Clear Cache to recache resources if necessary.
 ',
     'changelog' => '#Estated 1.0.2
@@ -54,9 +54,9 @@ THE SOFTWARE.
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modNamespace',
-      'guid' => '67d91e3d97403f7b60804fb45173b7f5',
+      'guid' => 'b986ac964bbd004163aaf11f7d89f434',
       'native_key' => 'estated',
-      'filename' => 'modNamespace/96fdb3251b365e1176992d1f1797551d.vehicle',
+      'filename' => 'modNamespace/4c14a3a76df4ab056a86d00aaed80b34.vehicle',
       'namespace' => 'estated',
     ),
     1 => 
@@ -64,9 +64,9 @@ THE SOFTWARE.
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modSystemSetting',
-      'guid' => '1f294f804fb0ee910c759764fdb961c1',
+      'guid' => '7682133298eb8b789865fc02fc86d07f',
       'native_key' => 'estated.apikey',
-      'filename' => 'modSystemSetting/0b60fe026fe8f2e54c86db269ff94c72.vehicle',
+      'filename' => 'modSystemSetting/db69befcca2923544eff3f0bc14f3f51.vehicle',
       'namespace' => 'estated',
     ),
     2 => 
@@ -74,9 +74,9 @@ THE SOFTWARE.
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modSystemSetting',
-      'guid' => '8fd35f5df0477dd63672d233b4bfdd5a',
+      'guid' => '2e27498fac38794c9028c7cda69c048f',
       'native_key' => 'estated.template',
-      'filename' => 'modSystemSetting/fbb48136a4f36c9d2ff14d3fefb580f0.vehicle',
+      'filename' => 'modSystemSetting/a9e9a9a45ee0e8f776831ce053241fbc.vehicle',
       'namespace' => 'estated',
     ),
     3 => 
@@ -84,9 +84,9 @@ THE SOFTWARE.
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modCategory',
-      'guid' => '1089b48e2555869ae69d9c3f403816a9',
+      'guid' => '4cbc054a25efbf0f5fb71ea94e93fffe',
       'native_key' => NULL,
-      'filename' => 'modCategory/2e092c633f3520ecc2c6fd36d45326c3.vehicle',
+      'filename' => 'modCategory/1c81d0c8dd56edeb17d0b4cd8f044305.vehicle',
       'namespace' => 'estated',
     ),
   ),
