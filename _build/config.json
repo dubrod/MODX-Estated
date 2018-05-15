@@ -1,0 +1,229 @@
+{
+  "name": "Estated",
+  "lowCaseName": "estated",
+  "description": "Estated Data Service for MODX",
+  "author": "Wayne Roddy",
+  "version": "1.0.2",
+  "package": {
+      "elements": {
+        "tvs": [
+            {
+              "caption": "Street Address",
+              "name": "estated_street",
+              "type": "text",
+              "sortOrder": 0,
+              "inputProperties": {
+                "allowBlank": 0
+              }
+            },
+            {
+              "caption": "City",
+              "name": "estated_city",
+              "type": "text",
+              "sortOrder": 1,
+              "inputProperties": {
+                "allowBlank": 0
+              }
+            },
+            {
+              "caption": "State",
+              "name": "estated_state",
+              "type": "text",
+              "sortOrder": 2,
+              "inputProperties": {
+                "allowBlank": 0
+              }
+            },
+            {
+              "caption": "Zipcode",
+              "name": "estated_zip",
+              "type": "text",
+              "sortOrder": 3,
+              "inputProperties": {
+                "allowBlank": 0
+              }
+            },
+            {
+              "caption": "Latitude",
+              "name": "estated_lat",
+              "type": "text",
+              "sortOrder": 4
+            },
+            {
+              "caption": "Longitude",
+              "name": "estated_long",
+              "type": "text",
+              "sortOrder": 5
+            },
+            {
+              "caption": "Zoning Category",
+              "name": "estated_zoning_category",
+              "type": "text",
+              "sortOrder": 6
+            },
+            {
+              "caption": "Zoning Description",
+              "name": "estated_zoning_description",
+              "type": "text",
+              "sortOrder": 7
+            },
+            {
+              "caption": "Acres",
+              "name": "estated_acres",
+              "type": "text",
+              "sortOrder": 8
+            },
+            {
+              "caption": "Year Built",
+              "name": "estated_year",
+              "type": "text",
+              "sortOrder": 9
+            },
+            {
+              "caption": "Beds",
+              "name": "estated_beds",
+              "type": "text",
+              "sortOrder": 10
+            },
+            {
+              "caption": "Baths",
+              "name": "estated_baths",
+              "type": "text",
+              "sortOrder": 11
+            },
+            {
+              "caption": "Total Size",
+              "name": "estated_total_size",
+              "type": "text",
+              "sortOrder": 12
+            },
+            {
+              "caption": "Garage Size",
+              "name": "estated_garage_size",
+              "type": "text",
+              "sortOrder": 12
+            },
+            {
+              "caption": "Architecture Type",
+              "name": "estated_arch_type",
+              "type": "text",
+              "sortOrder": 13
+            },
+            {
+              "caption": "Exterior Wall Type",
+              "name": "estated_ext_type",
+              "type": "text",
+              "sortOrder": 14
+            },
+            {
+              "caption": "Air Conditioning Type",
+              "name": "estated_ac_type",
+              "type": "text",
+              "sortOrder": 15
+            },
+            {
+              "caption": "Category",
+              "name": "estated_structures_category",
+              "type": "text",
+              "sortOrder": 16
+            },
+            {
+              "caption": "Condition",
+              "name": "estated_condition",
+              "type": "text",
+              "sortOrder": 17
+            },
+            {
+              "caption": "Pool",
+              "name": "estated_pool_type",
+              "type": "text",
+              "sortOrder": 18
+            },
+            {
+              "caption": "Quality",
+              "name": "estated_quality",
+              "type": "text",
+              "sortOrder": 19
+            },
+            {
+              "caption": "Roof Type",
+              "name": "estated_roof_type",
+              "type": "text",
+              "sortOrder": 20
+            },
+            {
+              "caption": "Market Value",
+              "name": "estated_value",
+              "type": "text",
+              "sortOrder": 21
+            },
+            {
+              "caption": "List Price",
+              "name": "estated_price",
+              "type": "text",
+              "sortOrder": 22
+            },
+            {
+              "caption": "Listing Status",
+              "name": "estated_status",
+              "type": "listbox",
+              "inputOptionValues": "For Sale||Pending||Sold",
+              "sortOrder": 98
+            },
+            {
+              "caption": "Skip during API Lookup",
+              "name": "estated_skip",
+              "type": "listbox",
+              "inputOptionValues": "False||True",
+              "sortOrder": 99
+            }
+          ],
+          "chunks": [
+              {
+                "name": "estated-data-table",
+                "file": "estated-data-table.tpl"
+              }
+          ],
+          "snippets": [
+            {
+              "name": "Estated"
+            }
+          ]
+      },
+      "systemSettings": [
+        {
+            "key": "apikey",
+            "type": "textfield",
+            "area": "Config",
+            "value": ""
+        },
+        {
+            "key": "template",
+            "type": "textfield",
+            "area": "Config",
+            "value": ""
+        }
+      ],
+      "resources": [
+        {
+            "pagetitle": "Estated API",
+            "longtitle": "",
+            "alias": "estated-lookup",
+            "template": 0,
+            "content_type": 1,
+            "content": "[[!Estated]]",
+            "isfolder": 0,
+            "published": 0,
+            "hidemenu": 1,
+            "searchable":0,
+            "cacheable":0,
+            "richtext":0
+        }
+      ]
+  },
+  "build": {
+    "readme": "docs/index.md",
+    "license": "docs/license.md",
+    "changelog": "docs/changelog.md"
+  }
+}

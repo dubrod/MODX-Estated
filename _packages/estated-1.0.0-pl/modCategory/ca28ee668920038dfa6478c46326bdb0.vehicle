@@ -1,0 +1,127 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Snippets' => 
+    array (
+      '83844b92fad7c82fac4b15192a93c98f' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"Estated","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/*\\n* Created by Wayne Roddy (wayne@modx.com) May 2018\\n* Look up and return result from https:\\/\\/estated.com\\/api\\/\\n* Usage: [[!Estated]]\\n* Requirements: API Key in Parameters\\n*\\/\\n\\n$key = $modx->getOption(\'estated.apikey\');\\n$tpl = $modx->getOption(\'estated.template\');\\n$report = \\"\\";\\n\\nif(empty($key) || empty($tpl)){\\n  return false;\\n}\\n\\n$resources = $modx->getCollection(\'modResource\', array(\'published\'=>\'1\',\'template\'=>$tpl));\\n\\nforeach($resources as $resource) {\\n    $id = $resource->get(\'id\');\\n    $title = $resource->get(\'pagetitle\');\\n    $estated_skip = $resource->getTVValue(\'estated_skip\');\\n    $estated_street = $resource->getTVValue(\'estated_street\');\\n\\n    if($estated_skip){\\n      return false;\\n    }\\n\\n    $report .= \\"Updated \\".$title.\\"(\\".$id.\\")\\";\\n}\\n\\nreturn $report;","locked":0,"properties":"a:0:{}","moduleguid":"","static":0,"static_file":"","content":"\\/*\\n* Created by Wayne Roddy (wayne@modx.com) May 2018\\n* Look up and return result from https:\\/\\/estated.com\\/api\\/\\n* Usage: [[!Estated]]\\n* Requirements: API Key in Parameters\\n*\\/\\n\\n$key = $modx->getOption(\'estated.apikey\');\\n$tpl = $modx->getOption(\'estated.template\');\\n$report = \\"\\";\\n\\nif(empty($key) || empty($tpl)){\\n  return false;\\n}\\n\\n$resources = $modx->getCollection(\'modResource\', array(\'published\'=>\'1\',\'template\'=>$tpl));\\n\\nforeach($resources as $resource) {\\n    $id = $resource->get(\'id\');\\n    $title = $resource->get(\'pagetitle\');\\n    $estated_skip = $resource->getTVValue(\'estated_skip\');\\n    $estated_street = $resource->getTVValue(\'estated_street\');\\n\\n    if($estated_skip){\\n      return false;\\n    }\\n\\n    $report .= \\"Updated \\".$title.\\"(\\".$id.\\")\\";\\n}\\n\\nreturn $report;"}',
+        'guid' => 'cd412555cf30d2beb7d83d1bafea94b5',
+        'native_key' => NULL,
+        'signature' => '2a89d87b44b75196a1657792bdd8cdff',
+      ),
+    ),
+    'TemplateVars' => 
+    array (
+      '0de4ecdcf326b0b4e7dd912aad535b9b' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_street","caption":"Street Address","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":0,"display":"","default_text":"","properties":"a:0:{}","input_properties":"a:1:{s:10:\\"allowBlank\\";i:0;}","output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '59aee5a01d98ff1093b7af4bdc12d5f7',
+        'native_key' => NULL,
+        'signature' => '944062a14301141d6eb9cbc89102a81c',
+      ),
+      '8fc5ca47a7ec176cfb84a61859f32601' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"listbox","name":"estated_skip","caption":"Skip during API Lookup","description":"","editor_type":0,"category":0,"locked":0,"elements":"Fasle||True","rank":99,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '2a662563af9b4bb40ff00ac59b55e9c5',
+        'native_key' => NULL,
+        'signature' => '90a1cc3e157f895e687bc4d18ceae0d0',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'parent',
+        1 => 'category',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'unique_key' => 'name',
+      'preserve_keys' => false,
+      'update_object' => true,
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => false,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'namespace' => 'estated',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"estated-1.0.0-pl\\/modCategory\\/ca28ee668920038dfa6478c46326bdb0\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"estated"}',
+    ),
+    1 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"estated-1.0.0-pl\\/modCategory\\/ca28ee668920038dfa6478c46326bdb0.gpm.resolve.tv_templates.resolver","type":"php","name":"gpm.resolve.tv_templates"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '87c21d0f06e8110752940d0baf36534c',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'ca28ee668920038dfa6478c46326bdb0',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"Estated","rank":0}',
+);

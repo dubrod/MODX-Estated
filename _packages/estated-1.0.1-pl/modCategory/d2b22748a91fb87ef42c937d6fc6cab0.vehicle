@@ -1,0 +1,171 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Snippets' => 
+    array (
+      '3979995208e14881baf5fbd9a130fdfa' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"Estated","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/*\\n* Created by Wayne Roddy (wayne@modx.com) May 2018\\n* Look up and return result from https:\\/\\/estated.com\\/api\\/\\n* Usage: [[!Estated]]\\n* Requirements: API Key in Parameters\\n*\\/\\n\\n$key = $modx->getOption(\'estated.apikey\');\\n$tpl = $modx->getOption(\'estated.template\');\\necho \\"Estated Resource Updates:<br>\\";\\n\\nif(empty($key) || empty($tpl)){\\n  return false;\\n}\\n\\n$resources = $modx->getCollection(\'modResource\', array(\'published\'=>\'1\',\'template\'=>$tpl));\\n\\nforeach($resources as $resource) {\\n    $id = $resource->get(\'id\');\\n    $title = $resource->get(\'pagetitle\');\\n    $estated_skip = $resource->getTVValue(\'estated_skip\');\\n\\n    if($estated_skip==\\"True\\"){\\n      continue;\\n    }\\n\\n    $address = $resource->getTVValue(\'estated_street\');\\n    $city = $resource->getTVValue(\'estated_city\');\\n    $state = $resource->getTVValue(\'estated_state\');\\n    $zip = $resource->getTVValue(\'estated_zip\');\\n\\n    if(empty($address) || empty($city) || empty($state) || empty($zip)){\\n      return false;\\n    }\\n\\n    \\/\\/Address Lookup\\n    $url = \'https:\\/\\/estated.com\\/api\\/property?token=\'.$key.\'&address=\'.$address.\'&city=\'.$address.\'&state=\'.$state.\'&zip=\'.$zip.\'\';\\n    $ch = curl_init();\\n    curl_setopt($ch, CURLOPT_URL, $url);\\n    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);\\n    $estated_output = curl_exec($ch);\\n    curl_close($ch);\\n\\n    $data = json_decode($estated_output);\\n\\n    if($data[\'status\'] == \\"succes\\"){\\n        $resource->getTVValue(\'estated_long\') = $data[\'data\'][\'property\'][\'address\'][\'latitude\'];\\n        echo \\"- Updated \\".$title.\\"(\\".$id.\\")<br>\\";\\n    }\\n\\n\\n}","locked":0,"properties":"a:0:{}","moduleguid":"","static":0,"static_file":"","content":"\\/*\\n* Created by Wayne Roddy (wayne@modx.com) May 2018\\n* Look up and return result from https:\\/\\/estated.com\\/api\\/\\n* Usage: [[!Estated]]\\n* Requirements: API Key in Parameters\\n*\\/\\n\\n$key = $modx->getOption(\'estated.apikey\');\\n$tpl = $modx->getOption(\'estated.template\');\\necho \\"Estated Resource Updates:<br>\\";\\n\\nif(empty($key) || empty($tpl)){\\n  return false;\\n}\\n\\n$resources = $modx->getCollection(\'modResource\', array(\'published\'=>\'1\',\'template\'=>$tpl));\\n\\nforeach($resources as $resource) {\\n    $id = $resource->get(\'id\');\\n    $title = $resource->get(\'pagetitle\');\\n    $estated_skip = $resource->getTVValue(\'estated_skip\');\\n\\n    if($estated_skip==\\"True\\"){\\n      continue;\\n    }\\n\\n    $address = $resource->getTVValue(\'estated_street\');\\n    $city = $resource->getTVValue(\'estated_city\');\\n    $state = $resource->getTVValue(\'estated_state\');\\n    $zip = $resource->getTVValue(\'estated_zip\');\\n\\n    if(empty($address) || empty($city) || empty($state) || empty($zip)){\\n      return false;\\n    }\\n\\n    \\/\\/Address Lookup\\n    $url = \'https:\\/\\/estated.com\\/api\\/property?token=\'.$key.\'&address=\'.$address.\'&city=\'.$address.\'&state=\'.$state.\'&zip=\'.$zip.\'\';\\n    $ch = curl_init();\\n    curl_setopt($ch, CURLOPT_URL, $url);\\n    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);\\n    $estated_output = curl_exec($ch);\\n    curl_close($ch);\\n\\n    $data = json_decode($estated_output);\\n\\n    if($data[\'status\'] == \\"succes\\"){\\n        $resource->getTVValue(\'estated_long\') = $data[\'data\'][\'property\'][\'address\'][\'latitude\'];\\n        echo \\"- Updated \\".$title.\\"(\\".$id.\\")<br>\\";\\n    }\\n\\n\\n}"}',
+        'guid' => 'c2ff2e7542daade211f498b20cf74863',
+        'native_key' => NULL,
+        'signature' => '60d8193b288c7edfa12d7070de690e9d',
+      ),
+    ),
+    'TemplateVars' => 
+    array (
+      '6cba41acbeada17feef0e2c8dc111748' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_street","caption":"Street Address","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":0,"display":"","default_text":"","properties":"a:0:{}","input_properties":"a:1:{s:10:\\"allowBlank\\";i:0;}","output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '572ced87a58454b8453cc3f8aa9742c6',
+        'native_key' => NULL,
+        'signature' => '7e4c09e7faa16a0e62c3e7b2bb637ed4',
+      ),
+      '4abac824d82e7c234c959a046ae64baa' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_city","caption":"City","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":1,"display":"","default_text":"","properties":"a:0:{}","input_properties":"a:1:{s:10:\\"allowBlank\\";i:0;}","output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => 'ade5c5751072ddeae0ea28a881a692a6',
+        'native_key' => NULL,
+        'signature' => 'd27f044192c703cf4ccd2023c72d828c',
+      ),
+      'dc2526029ae65db364ec482c2df886e4' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_state","caption":"State","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":2,"display":"","default_text":"","properties":"a:0:{}","input_properties":"a:1:{s:10:\\"allowBlank\\";i:0;}","output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '083441210aa4fa50368e211b7794825e',
+        'native_key' => NULL,
+        'signature' => '7e02254406d667cd06aa20adedf44811',
+      ),
+      '49bd6a242ad3ab2c190c81fa28a8dd47' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_zip","caption":"Zipcode","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":3,"display":"","default_text":"","properties":"a:0:{}","input_properties":"a:1:{s:10:\\"allowBlank\\";i:0;}","output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '7026dc36a6dfae9193a23a4c0b051b14',
+        'native_key' => NULL,
+        'signature' => 'b50fc51d908ab4422eca90f7752287f2',
+      ),
+      '7971158dc371a463964be1b08ccdeb65' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"text","name":"estated_lat","caption":"latitude","description":"","editor_type":0,"category":0,"locked":0,"elements":"","rank":4,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '8e28e5ea6a0aeafd5f4f4d003696ed2b',
+        'native_key' => NULL,
+        'signature' => '2ed7c4b921162777c9e476b0ca831974',
+      ),
+      '9fb75e8bf3906f5edd6910b1739b52d5' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"type":"listbox","name":"estated_skip","caption":"Skip during API Lookup","description":"","editor_type":0,"category":0,"locked":0,"elements":"Fasle||True","rank":99,"display":"","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":""}',
+        'guid' => '3dba8feb16918da22ddf89ab55b455a5',
+        'native_key' => NULL,
+        'signature' => '8517ee800a76c8e3bcafe1af4a131eaf',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'parent',
+        1 => 'category',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'unique_key' => 'name',
+      'preserve_keys' => false,
+      'update_object' => true,
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => false,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'namespace' => 'estated',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"estated-1.0.1-pl\\/modCategory\\/d2b22748a91fb87ef42c937d6fc6cab0\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"estated"}',
+    ),
+    1 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"estated-1.0.1-pl\\/modCategory\\/d2b22748a91fb87ef42c937d6fc6cab0.gpm.resolve.tv_templates.resolver","type":"php","name":"gpm.resolve.tv_templates"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '0c9ace9d537717225718e2f635b32e75',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'd2b22748a91fb87ef42c937d6fc6cab0',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"Estated","rank":0}',
+);
